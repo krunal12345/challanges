@@ -1,0 +1,198 @@
+
+/*  GENERAl  */
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+     background-color: hsl(0, 0%, 98%); 
+}
+
+
+.container{
+    
+    width:100%;
+}
+
+/*  HEADER   */
+
+h1,h2{
+    text-align: center;
+}
+
+#h1-1{
+   font-weight:  200;   
+}
+
+#h1-2{
+    font-weight: 600;
+}
+
+ header p{
+    text-align: center;
+    
+   
+}
+
+p{  
+    font-weight: 200;
+    color:  hsl(229, 6%, 66%);
+}
+
+/*  GRID   */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+ .box{
+    
+     background: #fff;
+     padding-left:8%;
+     padding-top: 2%;
+     padding-right: 7%;
+     height: 230px;
+     
+    
+     border-radius: 5px; 
+     
+     font-weight: 400;
+     
+      box-shadow: 1px 5px 10px  hsl(234, 9%, 80%) ;
+}
+
+
+.box-1{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.box-2{
+    border-top: 5px solid hsl(0, 78%, 62%);
+  
+}
+
+.box-3{
+    
+     border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.box-4{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.box-container{
+    position: absolute;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.box-container:after{
+    
+    position: static;
+    
+}
+
+.box-2{
+    
+    margin-bottom: 8%;
+}
+
+#box-1-image,#box-2-image,#box-3-image,#box-4-image{
+    margin-top: 8%;
+    height: 23%;
+    float: right
+}
+
+
+
+.column{
+    
+    float: left ;
+    width: 25%;
+}
+
+.column-1{
+    margin-top: 12.5%;
+}
+
+
+.column-3{
+    margin-top: 12.5%;
+}
+
+
+.column-2{
+ 
+    margin-left: 2.5%;
+    margin-right: 2.5%;    
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(28, 28, 28);
+  color: white;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .body{
+         width: 375px;
+        margin: 0;
+        padding: 0;
+      
+    }
+    .container{
+         margin: 0;
+        padding: 0;        
+    }
+  .column {
+      margin: 0;
+        padding: 0;
+      width:375px;
+      
+    
+  }
+    .box-container{
+         margin: 0;
+        padding: 0;
+        padding-left: 5%;
+        padding-right: 3%;
+        clear: both;
+         width: 375px;
+        margin-bottom: 15%;
+       
+       
+    }
+    
+    .box{
+         margin: 0;
+        padding: 2% 7% 2% 7% ;
+         width: 300px;
+        margin-bottom: 7%
+      
+    }
+  
+}
+
+
+
+
+
