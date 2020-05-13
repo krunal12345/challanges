@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+ 
+</head>
+ 
+   <body>
+      
+       
+       
+       <div class="container">
+           
+           
+           <div id="left-container">
+     
+               <div id="logo"> 
+               
+                   <img src="images/logo.svg" alt="logo">
+               
+               </div>
+               
+             <header> 
+          
+               <h1 id="h1-1"> WE'RE </h1>
+               <h1 id="h1-2"> COMING </h1>
+               <h1 id="h1-3">SOON </h1>
+               
+                   <p>
+                 Hello fellow shoppers! We're currently building our new <br>fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+               </p>
+       
+               <form>
+                <div class="form"> 
+                 <input type="email" id="email" name="email"  placeholder="Email Address">
+                   <img id="error-img"  src="images/icon-error.svg"/>
+                   <button type="submit" id=submit> <img id="arrow" src="images/icon-arrow.svg"> </button>  
+                   </div>
+               </form>
+                 <div id="error-message">  Please provide a valid email  </div>
+                 
+                 </header>
+               
+           </div>
+
+           
+           <div id="right-container">
+           
+           <img id="hero-img" src="images/hero-desktop.jpg" alt="hero-image">
+           
+           </div>
+  
+       </div>
+       
+       <script type="text/javascript">
+
+            document.getElementById("submit").onclick = 
+                function(){
+                    
+            var email = document.getElementById("email").value
+
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+                if (reg.test(email) == false) 
+                {
+                    document.getElementById("error-message").style.display="block";
+                    document.getElementById("error-img").style.display="block";
+                    document.getElementById("email").style.border="1px solid  hsl(0, 93%, 68%";
+
+                }
+                        else{
+                            alert("success full login");
+                        }
+
+           }
+
+       </script>
+    
+   
+   </body>
+    
+    
+</html>
